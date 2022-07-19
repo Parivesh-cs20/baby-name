@@ -38,14 +38,20 @@ function goBtnClicked() {
 
 // Display All Baby Names
 function displayAll() {
-  console.log("Display All");
   // Confirm data load
-  console.log(babyData);
+  nameCountSpan.innerHTML = babyData.length;
+  for (let i = 0; i < babyData.length; i++){
+    document.getElementById("container").innerHTML += `<p><b> "${babyData[i].name}"</b>  (Rank: ${babyData[i].rank}, Gender: ${babyData[i].gender})</p>`
+  }
+
 }
 
 // Display Names by Gender
 function searchGender() {
-  console.log("Search By Gender");
+  prompt.toLowerCase();
+  if (babyData[i].gender == prompt){
+    
+  }
 }
 
 // Display Names within a Range of Ranks
